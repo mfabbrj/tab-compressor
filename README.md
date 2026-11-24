@@ -19,6 +19,10 @@
 </p>
 
 <p align="center">
+  <img src="docs/screenshots.png" alt="Tab Compressor popup: Voice, Night and Music presets" width="100%">
+</p>
+
+<p align="center">
   <a href="#english">English</a> · <a href="#italiano">Italiano</a>
 </p>
 
