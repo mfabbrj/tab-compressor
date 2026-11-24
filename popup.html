@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="title">
+      <strong>Compressore / Limiter</strong>
+      <span id="tabTitle" class="sub"></span>
+    </div>
+    <button id="power" class="power" title="Attiva sulla scheda corrente">OFF</button>
+  </header>
+
+  <div id="error" class="error" hidden></div>
+
+  <section class="display">
+    <canvas id="curve" width="200" height="150"></canvas>
+    <div class="meters">
+      <div class="meter"><div class="bar" id="mIn"></div><span>IN</span></div>
+      <div class="meter gr"><div class="bar" id="mGr"></div><span>GR</span></div>
+      <div class="meter gr lim"><div class="bar" id="mLim"></div><span>LIM</span></div>
+      <div class="meter"><div class="bar" id="mOut"></div><span>OUT</span></div>
+    </div>
+  </section>
+  <div class="readout">
+    <span>IN <b id="vIn">–</b></span>
+    <span>GR <b id="vGr">–</b></span>
+    <span>OUT <b id="vOut">–</b></span>
+  </div>
+
+  <div class="row">
+    <select id="preset">
+      <option value="">Preset…</option>
+      <option value="leggero">Leggero</option>
+      <option value="voce">Voce / Podcast</option>
+      <option value="musica">Musica (glue)</option>
+      <option value="notte">Notte (livella tutto)</option>
+      <option value="limiter">Solo limiter</option>
+      <option value="default">Reset</option>
+    </select>
+    <label class="check"><input type="checkbox" id="bypass"> Bypass</label>
+  </div>
+
+  <h3>Compressore</h3>
+  <div id="compControls"></div>
+
+  <h3>
+    <label class="check"><input type="checkbox" id="limiter"> Limiter</label>
+  </h3>
+  <div id="limControls"></div>
+
+  <footer>Doppio clic su uno slider per il valore predefinito</footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
