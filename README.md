@@ -15,6 +15,7 @@
   <img alt="Web Audio API" src="https://img.shields.io/badge/Web%20Audio-API-f59e0b">
   <img alt="Zero dipendenze" src="https://img.shields.io/badge/dipendenze-zero-22c55e">
   <img alt="Nessun tracciamento" src="https://img.shields.io/badge/tracking-nessuno-ef4444">
+  <a href="LICENSE"><img alt="Licenza MIT" src="https://img.shields.io/badge/licenza-MIT-blue"></a>
 </p>
 
 ---
@@ -120,3 +121,7 @@ tab-compressor/
 ├── popup.js           # UI, curva, meter
 └── icons/
 ```
+
+## Licenza
+
+Distribuito con licenza [MIT](LICENSE): usalo, modificalo e ridistribuiscilo liberamente.
